@@ -1,0 +1,212 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+
+.icon h2 {
+    margin-left: 10px;
+    font-size: 24px;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    margin-right: 10px;
+    flex-wrap: wrap; /* Wrap menu items on smaller screens */
+}
+
+.menu li {
+    margin-left: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+/* Header */
+header h1 {
+    text-align: center;
+    padding: 60px 0;
+    background-image: url("form.png");
+    background-size: cover; /* Makes the image cover the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        background-size: contain; /* Ensures the entire image fits within the container */
+        padding: 30px 0;
+    }
+}
+
+
+/* Form Section */
+.sectioncontent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto; /* Adjust height for responsive views */
+    text-align: center;
+    padding: 20px;
+    background-color: #9ba181
+}
+
+h2 {
+    margin: 0;
+    font-size: 2rem; /* Adjust size as needed */
+}
+
+.fillform {
+    width: 90%; /* Adjust width for smaller screens */
+    max-width: 500px; /* Limit maximum width */
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Wrap form fields on smaller screens */
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    flex: 1;
+}
+
+.form-group.full-width {
+    flex: 100%; /* Full width for smaller screens */
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Scholarships Section */
+.scholarships {
+    display: flex;
+    flex-wrap: wrap; /* Wrap items for smaller screens */
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.scholarship {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: calc(100% - 40px); /* Full width for smaller screens */
+    max-width: 300px; /* Limit maximum width */
+}
+
+.scholarship h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.scholarship button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    /* Tablet View */
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    form {
+        width: 80%;
+    }
+
+    .scholarship {
+        width: calc(100% - 40px);
+        max-width: none;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Mobile View */
+    .navbar {
+        flex-direction: column;
+        padding: 10px 5px;
+    }
+
+    .icon h2 {
+        font-size: 20px;
+        margin-left: 5px;
+    }
+
+    .menu a {
+        font-size: 14px;
+    }
+
+    form {
+        width: 95%;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .scholarship h3 {
+        font-size: 18px;
+    }
+
+    .scholarship button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}

@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main {
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 50%), url(hero.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.icon h2 {
+    margin-left: 20px;
+    font-size: 24px;
+    color: white;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+    flex-wrap: wrap;
+}
+
+.menu li {
+    margin-left: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.srch {
+    padding: 5px;
+}
+
+.searchbtn {
+    padding: 5px 10px;
+    background-color: #ff5733;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.content {
+    height: auto;
+    margin: auto;
+    color: #fff;
+    position: relative;
+    text-align: center;
+    padding: 20px;
+
+}
+
+.content .par {
+    padding: 10px 20px;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+
+.content h1 {
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+.content .cn {
+    width: 160px;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    margin: 20px auto;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+    display: block;
+}
+
+.content .cn a {
+    text-decoration: none;
+    color: #000;
+    transition: .3s ease;
+}
+
+.cn:hover {
+    background-color: #fff;
+}
+
+.content span {
+    color: #ff7200;
+    font-size: 50px;
+}
+
+.form {
+    width: 90%;
+    max-width: 320px;
+    background: linear-gradient(to top, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0.8) 50%);
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 25px;
+    position: relative;
+}
+
+.form h2 {
+    text-align: center;
+    color: #ff7200;
+    font-size: 22px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+.form input {
+    width: 100%;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid #ff7200;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #fff;
+    font-size: 15px;
+    margin-top: 30px;
+}
+
+.form input:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: #fff;
+}
+
+.btnn {
+    width: 100%;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.4s ease;
+}
+
+.btnn:hover {
+    background: #fff;
+    color: #ff7200;
+}
+
+.btnn a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.form .link {
+    font-size: 17px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.form .link a {
+    text-decoration: none;
+    color: #ff7200;
+}
+
+.liw {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.icons a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.icons ion-icon {
+    color: #fff;
+    font-size: 30px;
+    padding: 5px;
+    transition: 0.3s ease;
+}
+
+.icons ion-icon:hover {
+    color: #ff7200;
+}
+
+/*.about {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    flex-wrap: wrap;*/
+/*    width: 100%;*/
+/*    padding: 10% 7%;*/
+/*    background-color: #833556;*/
+    height: auto; /* Allow dynamic height adjustment */
+/*}*/
+
+/*.about-left-side, .about-right-side {*/
+    width: 100%; /* Full width for smaller screens */
+    text-align: center; /* Center align for smaller screens */
+/*    margin-top: 20px;*/
+/*}*/
+
+/*.about-left-side {*/
+/*    padding-top: 0;*/
+/*    color: white;*/
+/*}*/
+
+/*.about-left-side h1 {*/
+    font-size: 35px; /* Smaller font size for mobile */
+/*    padding-bottom: 20px;*/
+/*    font-weight: bolder;*/
+/*}*/
+
+/*.about-left-side h3 {*/
+/*    font-size: 18px;*/
+/*    line-height: 1.4;*/
+/*    font-weight: 700;*/
+/*}*/
+
+/*.about-left-side p {*/
+/*    color: white;*/
+/*    font-size: 14px;*/
+    padding: 0 20px; /* Padding for mobile */
+/*    line-height: 22px;*/
+/*}*/
+
+/*.about-right-side img {*/
+    width: 100%; /* Full width for responsiveness */
+    max-width: 400px; /* Limit max width */
+    height: auto; /* Maintain aspect ratio */
+/*}*/
+
+/*@media (min-width: 768px) {*/
+/*    .about-left-side, .about-right-side {*/
+        width: 48%; /* Side by side for tablets */
+/*        text-align: left;*/
+/*    }*/
+
+/*    .about-left-side h1 {*/
+        font-size: 45px; /* Adjust font size for tablets */
+/*    }*/
+
+/*    .about-left-side h3 {*/
+/*        font-size: 20px;*/
+/*    }*/
+
+/*    .about-left-side p {*/
+/*        font-size: 16px;*/
+/*        padding: 0;*/
+/*        padding-right: 20px;*/
+/*        line-height: 24px;*/
+/*    }*/
+
+/*    .about-right-side img {*/
+/*        max-width: 100%;*/
+/*    }*/
+/*}*/
+
+/*@media (min-width: 1024px) {*/
+/*    .about-left-side, .about-right-side {*/
+        width: 45%; /* Slightly smaller width for PCs */
+/*        justify-content: space-between;*/
+/*    }*/
+
+/*    .about-left-side h1 {*/
+        font-size: 55px; /* Larger font size for PCs */
+/*    }*/
+
+/*    .about-left-side h3 {*/
+/*        font-size: 22px;*/
+/*    }*/
+
+/*    .about-left-side p {*/
+/*        font-size: 16px;*/
+/*        line-height: 26px;*/
+/*    }*/
+
+/*    .about-right-side img {*/
+/*        max-width: 100%;*/
+/*    }*/
+/*}*/
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content h1 {
+        font-size: 30px;
+    }
+
+    .content span {
+        font-size: 40px;
+    }
+
+    .content .par {
+        font-size: 14px;
+    }
+
+    .form {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .content h1 {
+        font-size: 25px;
+    }
+
+    .content span {
+        font-size: 30px;
+    }
+
+    .form {
+        padding: 15px;
+    }
+
+    .btnn {
+        font-size: 16px;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.login{
+    background-image: url("bg1.jpg");
+    margin:0;
+    padding:0;
+    margin-top: -20px;
+    margin-bottom: -20px;
+}
+
+
